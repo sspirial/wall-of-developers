@@ -3,7 +3,7 @@ import styles from './InfoPanel.module.css';
 
 const InfoPanel: React.FC = () => {
   return (
-    <div className={styles.infoPanel}>
+    <div id="panel" className={styles.infoPanel}>
       <h2 className={styles.theme}>Empowering Innovation for a Sustainable Future</h2>
       
       <p className={styles.info}><strong>Date:</strong> May 15–17, 2025</p>

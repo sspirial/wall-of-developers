@@ -24,8 +24,7 @@ const pitchesData = [
   },
 ];
 
-export function Pitches() {  return (
-    <section className={styles.pitchesSection}>
+export function Pitches() {  return (    <section id="pitches" className={styles.pitchesSection}>
       <h2 className={styles.pitchesTitle}>Pitches at Pwani Innovation Hackathon</h2>
       <div className={styles.pitchesList}>
         {pitchesData.map((pitch, idx) => (

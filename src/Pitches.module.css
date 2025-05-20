@@ -10,7 +10,7 @@
 .pitchesTitle {
   font-family: 'Stencil Std', 'Black Ops One', sans-serif;
   font-size: 2rem;
-  color: #ff6b00;
+  color: #dd8d53;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -26,7 +26,7 @@
   background: rgba(255, 107, 0, 0.1);
   padding: 1.5rem;
   border-radius: 8px;
-  border: 1px solid #ff6b00;
+  border: 1px solid #dd8d53;
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
@@ -37,7 +37,7 @@
 
 .pitchTitle {
   font-family: 'Stencil Std', 'Black Ops One', sans-serif;
-  color: #ff6b00;
+  color: #dd8d53;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }

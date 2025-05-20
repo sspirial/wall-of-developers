@@ -1,6 +1,4 @@
 import { useState, CSSProperties } from 'react'
-import styles from './Hackathon.module.css'
-// Import images from the src/assets folder
 import image1 from './assets/image1.jpeg'
 import image2 from './assets/image2.jpeg'
 import image3 from './assets/image3.jpeg'
@@ -53,10 +51,8 @@ function Hackathon() {
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
         marginTop: '30px',
         color: 'white'
-    };
-
-    return (
-        <div className="w-full py-8">
+    };    return (
+        <div id="hackathon" className="w-full py-8">
             <div className="container mx-auto px-4">                <h1 className="text-3xl font-bold mb-6 text-left text-[#ff6b00]" style={{ fontFamily: "'Stencil Std', 'Black Ops One', sans-serif" }}>
                     Hackathons at SwahiliPot
                 </h1>
