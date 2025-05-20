@@ -46,12 +46,12 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    gap: 8px; /* Reduced gap between images */
 }
 
 .grid img {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increased size */
+    height: 200px; /* Increased size */
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
