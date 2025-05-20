@@ -4,7 +4,6 @@ import React from 'react';
 const InfoPanel: React.FC = () => {
   return (
     <div>
-      <h2>Pwani Innovation Event 2025</h2>
       <p><strong>Theme:</strong> Empowering Innovation for a Sustainable Future</p>
       <p><strong>Date:</strong> May 15–17, 2025</p>
       <p><strong>Venue:</strong> Swahilipot Hub, Mombasa</p>
