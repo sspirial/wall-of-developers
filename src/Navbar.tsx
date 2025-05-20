@@ -17,7 +17,7 @@ export default function Navbar() {
                 </div>
             </div>
             <div className="hero">
-                <div className="hero__image">
+                <div className="hero-image">
                     <img src="/assets/innovation.webp" alt="Hackathon" />
                 </div>
             </div>
