@@ -56,3 +56,25 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.highlights {
+    list-style: none;
+}
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

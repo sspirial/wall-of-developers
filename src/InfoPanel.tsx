@@ -9,7 +9,7 @@ const InfoPanel: React.FC = () => {
       <p><strong>Venue:</strong> Swahilipot Hub, Mombasa</p>
 
       <h3>Highlights:</h3>
-      <ul>
+      <ul className='highlights'>
         <li>Tech Exhibitions</li>
         <li>Startup Pitches</li>
         <li>Workshops & Demos</li>
@@ -19,10 +19,6 @@ const InfoPanel: React.FC = () => {
 
       <h3>Target Audience:</h3>
       <p>Innovators, Startups, Investors, Students, and Development Partners.</p>
-
-      <h3>Contact:</h3>
-      <p>Email: info@pwaniinnovation.ke</p>
-      <p>Phone: +254 719 168 367</p>
 
     </div>
   );
