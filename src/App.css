@@ -60,3 +60,362 @@
   color: #333;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 107, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.navbarLogo img {
+  height: 50px;
+}
+
+.navbarLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  font-family: "Stencil Std", "Black Ops One", sans-serif;
+  position: relative;
+}
+
+.navButton::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #ff6b00;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navButton:hover {
+  color: #ff6b00;
+}
+
+.navButton:hover::after {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 80px; /* Add space for fixed navbar */
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.hackathon-section {
+  width: 100%;
+  padding: 2rem 0;
+}
+.hackathon-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.hackathon-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  color: #ff6b00;
+  font-family: "Stencil Std", "Black Ops One", sans-serif;
+}
+.hackathon-image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+.hackathon-image-wrapper {
+  flex: 1;
+  max-width: 24%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  position: relative;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.hackathon-image-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e7eb;
+  z-index: 1;
+}
+.hackathon-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 300ms;
+}
+.opacity-0 {
+  opacity: 0;
+}
+.opacity-100 {
+  opacity: 1;
+}
+.hackathon-text-container {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  color: white;
+}
+.hackathon-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ff6b00;
+  font-family: "Stencil Std", "Black Ops One", sans-serif;
+}
+.hackathon-text p {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+.imageWrapper {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: translateY(-5px);
+}
+
+.imageWrapper:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(255, 107, 0, 0.2), transparent);
+  pointer-events: none;
+}
+.infoPanel {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: white;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.theme {
+  font-family: "Stencil Std", "Black Ops One", sans-serif;
+  font-size: 1.8rem;
+  color: #dd8d53;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.info {
+  font-family: "Roboto", sans-serif;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.highlights {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.highlights li {
+  background: rgba(255, 107, 0, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #dd8d53;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.highlights li:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 107, 0, 0.2);
+}
+
+.heading {
+  font-family: "Stencil Std", "Black Ops One", sans-serif;
+  color: #dd8d53;
+  margin: 2rem 0 1rem;
+}
+
+.targetAudience {
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.pitchesSection {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: white;
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pitchesTitle {
+  font-family: "Stencil Std", "Black Ops One", sans-serif;
+  font-size: 2rem;
+  color: #dd8d53;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.pitchesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.pitchCard {
+  background: rgba(255, 107, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #dd8d53;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.pitchCard:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 107, 0, 0.2);
+}
+
+.pitchTitle {
+  font-family: "Stencil Std", "Black Ops One", sans-serif;
+  color: #dd8d53;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.teamName {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.members {
+  color: #e0e0e0;
+  font-style: italic;
+}
+.footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 3rem 2rem;
+  margin-top: 4rem;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.title {
+  font-family: "Stencil Std", "Black Ops One", sans-serif;
+  color: #dd8d53;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.socialMedia {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.socialMedia li a {
+  color: #dd8d53;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #dd8d53;
+  border-radius: 5px;
+  background: rgba(255, 107, 0, 0.1);
+  font-size: 1.1rem;
+}
+
+.socialMedia li a:hover {
+  color: white;
+  background: rgba(255, 107, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.contact {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contact p {
+  margin: 1rem 0;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+
+.contact a {
+  color: #dd8d53;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact a:hover {
+  color: white;
+}
+
+.copyright {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 107, 0, 0.3);
+  text-align: center;
+  color: #e0e0e0;
+  grid-column: 1 / -1;
+}

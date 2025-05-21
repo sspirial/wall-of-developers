@@ -1,4 +1,4 @@
-import styles from './Pitches.module.css';
+import "../App.css";
 
 const pitchesData = [
   {
@@ -24,17 +24,19 @@ const pitchesData = [
   },
 ];
 
-export function Pitches() {  return (    <section id="pitches" className={styles.pitchesSection}>
-      <h2 className={styles.pitchesTitle}>Pitches at Pwani Innovation Hackathon</h2>
-      <div className={styles.pitchesList}>
+export function Pitches() {
+  return (
+    <section id="pitches" className="pitchesSection">
+      <h2 className="pitchesTitle">Pitches at Pwani Innovation Hackathon</h2>
+      <div className="pitchesList">
         {pitchesData.map((pitch, idx) => (
-          <div className={styles.pitchCard} key={idx}>
-            <h3 className={styles.pitchTitle}>{pitch.title}</h3>
-            <p className={styles.teamName}>
+          <div className="pitchCard" key={idx}>
+            <h3 className="pitchTitle">{pitch.title}</h3>
+            <p className="teamName">
               <strong>Team:</strong> {pitch.team}
             </p>
-            <p className={styles.description}>{pitch.description}</p>
-            <p className={styles.members}>
+            <p className="description">{pitch.description}</p>
+            <p className="members">
               <strong>Members:</strong> {pitch.members.join(", ")}
             </p>
           </div>

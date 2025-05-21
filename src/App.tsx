@@ -1,9 +1,9 @@
 import "./App.css";
-import Hackathon from "./hackathon";
-import InfoPanel from "./InfoPanel";
-import Navbar from "./Navbar";
-import { Footer } from "./Footer";
-import { Pitches } from "./Pitches";
+import Hackathon from "./components/hackathon";
+import InfoPanel from "./components/InfoPanel";
+import Navbar from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import { Pitches } from "./components/Pitches";
 function App() {
   return (
     <>
