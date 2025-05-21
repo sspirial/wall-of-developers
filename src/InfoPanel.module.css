@@ -1,0 +1,58 @@
+.infoPanel {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: white;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.theme {
+  font-family: 'Stencil Std', 'Black Ops One', sans-serif;
+  font-size: 1.8rem;
+  color: #dd8d53;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.info {
+  font-family: 'Roboto', sans-serif;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.highlights {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.highlights li {
+  background: rgba(255, 107, 0, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #dd8d53;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.highlights li:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 107, 0, 0.2);
+}
+
+.heading {
+  font-family: 'Stencil Std', 'Black Ops One', sans-serif;
+  color: #dd8d53;
+  margin: 2rem 0 1rem;
+}
+
+.targetAudience {
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 1.5rem;
+}
