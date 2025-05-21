@@ -1,5 +1,4 @@
 import { useState, CSSProperties } from 'react'
-// Import images from the src/assets folder
 import image1 from './assets/image1.jpeg'
 import image2 from './assets/image2.jpeg'
 import image3 from './assets/image3.jpeg'
@@ -36,31 +35,34 @@ function Hackathon() {
         gap: '10px',
         marginBottom: '20px',
         flexWrap: 'nowrap'
-    };
-
-    const imageStyle: CSSProperties = {
+    };    const imageStyle: CSSProperties = {
         flex: '1',
         maxWidth: '24%',
         borderRadius: '8px',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
         overflow: 'hidden',
-        aspectRatio: '1/1'
-    };
-
-    const textContainerStyle: CSSProperties = {
-        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+        aspectRatio: '1/1',
+        transition: 'transform 0.2s ease',
+        cursor: 'pointer'
+    };const textContainerStyle: CSSProperties = {
+        background: 'rgba(0, 0, 0, 0.7)',
         borderRadius: '10px',
         padding: '25px',
-        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
         marginTop: '30px',
-    };
-
-    return (
-        <div className="w-full py-8">
-            <div className="container mx-auto px-4">
-                <h1 className="text-3xl font-bold mb-6 text-left">Hackathons at SwahiliPot</h1>
+        color: 'white'
+    };    return (
+        <div id="hackathon" className="w-full py-8">
+            <div className="container mx-auto px-4">                <h1 className="text-3xl font-bold mb-6 text-left text-[#ff6b00]" style={{ fontFamily: "'Stencil Std', 'Black Ops One', sans-serif" }}>
+                    Hackathons at SwahiliPot
+                </h1>
                 
-                <div style={imageContainerStyle}>
+                <div style={{
+                    ...imageContainerStyle,
+                    background: 'rgba(0, 0, 0, 0.7)',
+                    padding: '20px',
+                    borderRadius: '10px',
+                }}>
                     {images.map((image) => (
                         <div key={image.id} style={imageStyle} className="relative">
                             {!imagesLoaded[image.id] && 
@@ -90,9 +92,10 @@ function Hackathon() {
                 </div>
                 
                 {/* Text Section in a container */}
-                <div style={textContainerStyle}>
-                    <h2 className="text-2xl font-semibold mb-4 text-gray-800">About Our Hackathons</h2>
-                    <div className="text-lg text-gray-700">
+                <div style={textContainerStyle}>                    <h2 className="text-2xl font-semibold mb-4 text-[#ff6b00]" style={{ fontFamily: "'Stencil Std', 'Black Ops One', sans-serif" }}>
+                        About Our Hackathons
+                    </h2>
+                    <div className="text-lg text-white">
                         <p className="mb-4">
                             SwahiliPot Hub hosts exciting hackathons that bring together talented developers, 
                             designers, and innovators from across Mombasa and beyond. These intensive coding 

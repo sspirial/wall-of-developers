@@ -1,23 +1,34 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import styles from './Navbar.module.css'
 
-export default function Navbar() {
+export default function Navbar() {    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            const navbarHeight = 80; // Height of fixed navbar
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return (
         <div>
-            <div className="navbar">
-                <div className="navbar-logo">
+            <nav className={styles.navbar}>
+                <div className={styles.navbarLogo}>
                     <img src="/assets/sph-logo.png" alt="Logo" />
+                </div>                <div className={styles.navbarLinks}>
+                    <button onClick={() => scrollToSection('panel')} className={styles.navButton}>Home</button>
+                    <button onClick={() => scrollToSection('hackathon')} className={styles.navButton}>Hackathon</button>
+                    <button onClick={() => scrollToSection('panel')} className={styles.navButton}>Panel</button>
+                    <button onClick={() => scrollToSection('pitches')} className={styles.navButton}>Pitches</button>
+                    <button onClick={() => scrollToSection('footer')} className={styles.navButton}>Contacts</button>
                 </div>
-                <div className="navbar-links">
-                    <Link to="#" className='links' >Home</Link>
-                    <Link to="#" className='links' >Hackathon</Link>
-                    <Link to="#" className='links' >Pannel</Link>
-                    <Link to="#" className='links'>Pitches</Link>
-                    <Link to="#" className='links'>Contacts</Link>
-                </div>
-            </div>
-            <div className="hero">
-                <div className="hero-image">
+            </nav>
+            <div className={styles.hero}>
+                <div className={styles.heroImage}>
                     <img src="/assets/innovation.webp" alt="Hackathon" />
                 </div>
             </div>
