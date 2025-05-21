@@ -48,12 +48,11 @@ function Hackathon() {
     };
 
     const textContainerStyle: CSSProperties = {
-        backgroundColor: '#f8f9fa',
+        backgroundColor: 'rgba(0, 0, 0, 0.7)',
         borderRadius: '10px',
         padding: '25px',
         boxShadow: '0 4px 12px rgba(0, 0, 0, 0.05)',
         marginTop: '30px',
-        border: '1px solid #e9ecef'
     };
 
     return (
