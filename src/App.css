@@ -149,7 +149,7 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  text-align: left;
+  text-align: center;
   color: #ff6b00;
   font-family: "Stencil Std", "Black Ops One", sans-serif;
 }
@@ -430,7 +430,7 @@
 }
 
 /* Add responsive styles for Hackathon component */
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .hackathon-image-row {
     flex-wrap: wrap;
     justify-content: center;
@@ -466,7 +466,7 @@
 }
 
 /* Add responsive styles for Navbar */
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -541,7 +541,7 @@
   right: 1rem;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 920px) {
   .hamburger {
     display: none; /* Hide hamburger on larger screens */
   }
