@@ -468,9 +468,9 @@
 /* Add responsive styles for Navbar */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
   }
 
   .navbarLogo img {
@@ -478,7 +478,7 @@
   }
 
   .navbarLinks {
-    display: none;
+    display: none; /* Hide links by default */
     flex-direction: column;
     gap: 10px;
     position: absolute;
@@ -491,11 +491,13 @@
   }
 
   .navbarLinks.open {
-    display: flex;
+    display: flex; /* Show links when hamburger is clicked */
   }
 
   .hamburger {
-    display: block;
+    display: block; /* Ensure hamburger is visible */
+    position: absolute;
+    right: 1rem;
   }
 
   .navbarLinks {
@@ -510,17 +512,46 @@
   }
 }
 
-/* Add styles for responsive Navbar with hamburger menu */
+/* Ensure no style conflicts for hamburger menu and navbar links */
 .navbarLinks {
-  display: flex;
-  gap: 1.5rem;
+  display: none; /* Hide links by default */
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.navbarLinks.open {
+  display: flex; /* Show links when hamburger is clicked */
 }
 
 .hamburger {
-  display: none;
+  display: block; /* Ensure hamburger is visible */
   background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
   color: white;
+  position: absolute;
+  right: 1rem;
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none; /* Hide hamburger on larger screens */
+  }
+
+  .navbarLinks {
+    display: flex; /* Show links by default on larger screens */
+    position: static;
+    flex-direction: row;
+    gap: 1.5rem;
+    background-color: transparent;
+    padding: 0;
+  }
 }
