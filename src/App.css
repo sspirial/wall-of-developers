@@ -115,6 +115,15 @@
   width: 100%;
 }
 
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
 .hero {
   width: 100%;
   height: auto;
@@ -418,4 +427,100 @@
   text-align: center;
   color: #e0e0e0;
   grid-column: 1 / -1;
+}
+
+/* Add responsive styles for Hackathon component */
+@media (max-width: 768px) {
+  .hackathon-image-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hackathon-image-wrapper {
+    max-width: 45%;
+    margin-bottom: 10px;
+    min-width: 150px; /* Set a suitable minimum width */
+  }
+
+  .hackathon-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .hackathon-text-container {
+    padding: 15px;
+  }
+
+  .hackathon-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .hackathon-text p {
+    font-size: 1rem;
+  }
+
+  .hackathon-image {
+    min-height: 150px; /* Set a suitable minimum height */
+  }
+}
+
+/* Add responsive styles for Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .navbarLogo img {
+    height: 40px; /* Adjust logo size for small screens */
+  }
+
+  .navbarLinks {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  .navbarLinks.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbarLinks {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navButton {
+    font-size: 0.9rem; /* Adjust font size for small screens */
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Add styles for responsive Navbar with hamburger menu */
+.navbarLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
 }

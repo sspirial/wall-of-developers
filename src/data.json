@@ -1,0 +1,58 @@
+{
+  "theme": "Empowering Innovation for a Sustainable Future",
+  "date": "May 15–17, 2025",
+  "venue": "Swahilipot Hub, Mombasa",
+  "highlights": [
+    "Tech Exhibitions",
+    "Startup Pitches",
+    "Workshops & Demos",
+    "Panel Discussions",
+    "Networking Sessions"
+  ],
+  "targetAudience": "Innovators, Startups, Investors, Students, and Development Partners",
+  "hackathon": {
+    "title": "Hackathons at SwahiliPot",
+    "about": [
+      "SwahiliPot Hub hosts exciting hackathons that bring together talented developers, designers, and innovators from across Mombasa and beyond. These intensive coding events foster creativity, collaboration, and technological solutions to local and global challenges.",
+      "Our hackathons typically run over 24-48 hours, where participants form teams to conceptualize and build innovative projects. With mentorship from industry experts and access to SwahiliPot's resources, participants transform ideas into functional prototypes.",
+      "Past hackathons have focused on themes like sustainable development, healthcare innovation, and digital solutions for local businesses. These events have launched numerous startups and continue to nurture the next generation of tech talent on the Kenyan coast."
+    ],
+    "images": [
+      { "src": "image1.jpeg", "alt": "Hackathon at SwahiliPot" },
+      { "src": "image2.jpeg", "alt": "Developers collaborating" },
+      { "src": "image3.jpeg", "alt": "Coding session" },
+      { "src": "image4.jpeg", "alt": "Project presentation" }
+    ]
+  },
+  "pitches": [
+    {
+      "title": "Smart Water Monitoring",
+      "team": "AquaTech",
+      "description": "A real-time IoT solution for monitoring water usage and quality in coastal communities.",
+      "members": ["Fatma Ali", "John Mwangi", "Aisha Omar"]
+    },
+    {
+      "title": "Blue Economy Marketplace",
+      "team": "Pwani Traders",
+      "description": "A digital platform connecting local fishermen and artisans to buyers, promoting sustainable trade.",
+      "members": ["Salim Yusuf", "Grace Otieno", "Peter Kimani"]
+    },
+    {
+      "title": "Eco-Tourism App",
+      "team": "Safari Innovators",
+      "description": "A mobile app that curates eco-friendly tourism experiences along the Kenyan coast.",
+      "members": ["Mary Wambui", "Ali Bakari", "Susan Njeri"]
+    }
+  ],
+  "contacts": {
+    "email": "info@pwaniinnovation.ke",
+    "phone": "+254 719 168 367",
+    "website": "www.pwaniinnovationweek.co.ke",
+    "social": {
+      "facebook": "https://www.facebook.com/PwaniInnovationWeek",
+      "twitter": "https://twitter.com/PwaniInnovation",
+      "instagram": "https://www.instagram.com/PwaniInnovation/",
+      "linkedin": "https://www.linkedin.com/company/pwaniinnovationweek/"
+    }
+  }
+}

@@ -1,6 +1,13 @@
+import { useState } from "react";
 import "../App.css";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -13,6 +20,7 @@ export default function Navbar() {
         top: offsetPosition,
         behavior: "smooth",
       });
+      setMenuOpen(false); // Close menu after navigation
     }
   };
 
@@ -22,7 +30,10 @@ export default function Navbar() {
         <div className="navbarLogo">
           <img src="/assets/sph-logo.png" alt="Logo" />
         </div>
-        <div className="navbarLinks">
+        <button className="hamburger" onClick={toggleMenu}>
+          ☰
+        </button>
+        <div className={`navbarLinks ${menuOpen ? "open" : ""}`}>
           <button
             onClick={() => scrollToSection("panel")}
             className="navButton"

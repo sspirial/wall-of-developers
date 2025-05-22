@@ -1,28 +1,25 @@
 import React from "react";
 import "../App.css";
+import data from "../data.json";
 
 const InfoPanel: React.FC = () => {
   return (
     <div id="panel" className="infoPanel">
-      <h2 className="theme">Empowering Innovation for a Sustainable Future</h2>
+      <h2 className="theme">{data.theme}</h2>
       <p className="info">
-        <strong>Date:</strong> May 15–17, 2025
+        <strong>Date:</strong> {data.date}
       </p>
       <p className="info">
-        <strong>Venue:</strong> Swahilipot Hub, Mombasa
+        <strong>Venue:</strong> {data.venue}
       </p>
       <h3 className="heading">Highlights:</h3>
       <ul className="highlights">
-        <li>Tech Exhibitions</li>
-        <li>Startup Pitches</li>
-        <li>Workshops & Demos</li>
-        <li>Panel Discussions</li>
-        <li>Networking Sessions</li>
+        {data.highlights.map((item: string, idx: number) => (
+          <li key={idx}>{item}</li>
+        ))}
       </ul>
       <h3 className="heading">Target Audience:</h3>
-      <p className="targetAudience">
-        Innovators, Startups, Investors, Students, and Development Partners
-      </p>
+      <p className="targetAudience">{data.targetAudience}</p>
     </div>
   );
 };

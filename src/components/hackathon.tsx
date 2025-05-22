@@ -1,9 +1,6 @@
 import { useState } from "react";
 import "../App.css";
-import image1 from "../assets/image1.jpeg";
-import image2 from "../assets/image2.jpeg";
-import image3 from "../assets/image3.jpeg";
-import image4 from "../assets/image4.jpeg";
+import data from "../data.json";
 const placeholderImg = "https://via.placeholder.com/150";
 
 function Hackathon() {
@@ -21,17 +18,16 @@ function Hackathon() {
     }));
   };
 
-  const images = [
-    { src: image1, alt: "Hackathon at SwahiliPot", id: "image1" },
-    { src: image2, alt: "Developers collaborating", id: "image2" },
-    { src: image3, alt: "Coding session", id: "image3" },
-    { src: image4, alt: "Project presentation", id: "image4" },
-  ];
+  const images = data.hackathon.images.map((img: any, idx: number) => ({
+    src: new URL(`../assets/${img.src}`, import.meta.url).href,
+    alt: img.alt,
+    id: `image${idx + 1}`,
+  }));
 
   return (
     <div id="hackathon" className="hackathon-section">
       <div className="hackathon-container">
-        <h1 className="hackathon-title">Hackathons at SwahiliPot</h1>
+        <h1 className="hackathon-title">{data.hackathon.title}</h1>
         <div className="hackathon-image-row">
           {images.map((image) => (
             <div key={image.id} className="hackathon-image-wrapper">
@@ -60,27 +56,9 @@ function Hackathon() {
         <div className="hackathon-text-container">
           <h2 className="hackathon-subtitle">About Our Hackathons</h2>
           <div className="hackathon-text">
-            <p>
-              SwahiliPot Hub hosts exciting hackathons that bring together
-              talented developers, designers, and innovators from across Mombasa
-              and beyond. These intensive coding events foster creativity,
-              collaboration, and technological solutions to local and global
-              challenges.
-            </p>
-            <p>
-              Our hackathons typically run over 24-48 hours, where participants
-              form teams to conceptualize and build innovative projects. With
-              mentorship from industry experts and access to SwahiliPot's
-              resources, participants transform ideas into functional
-              prototypes.
-            </p>
-            <p>
-              Past hackathons have focused on themes like sustainable
-              development, healthcare innovation, and digital solutions for
-              local businesses. These events have launched numerous startups and
-              continue to nurture the next generation of tech talent on the
-              Kenyan coast.
-            </p>
+            {data.hackathon.about.map((text: string, idx: number) => (
+              <p key={idx}>{text}</p>
+            ))}
           </div>
         </div>
       </div>

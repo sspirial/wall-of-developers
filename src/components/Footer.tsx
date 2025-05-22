@@ -1,4 +1,5 @@
 import "../App.css";
+import data from "../data.json";
 
 export function Footer() {
   return (
@@ -8,7 +9,7 @@ export function Footer() {
         <ul className="socialMedia">
           <li>
             <a
-              href="https://www.facebook.com/PwaniInnovationWeek"
+              href={data.contacts.social.facebook}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -17,7 +18,7 @@ export function Footer() {
           </li>
           <li>
             <a
-              href="https://twitter.com/PwaniInnovation"
+              href={data.contacts.social.twitter}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -26,7 +27,7 @@ export function Footer() {
           </li>
           <li>
             <a
-              href="https://www.instagram.com/PwaniInnovation/"
+              href={data.contacts.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -35,7 +36,7 @@ export function Footer() {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/company/pwaniinnovationweek/"
+              href={data.contacts.social.linkedin}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -45,16 +46,16 @@ export function Footer() {
         </ul>
 
         <div className="contact">
-          <p>Email: info@pwaniinnovation.ke</p>
-          <p>Phone: +254 719 168 367</p>
+          <p>Email: {data.contacts.email}</p>
+          <p>Phone: {data.contacts.phone}</p>
           <p>
             Website:{" "}
             <a
-              href="https://www.pwaniinnovation.ke"
+              href={`https://${data.contacts.website}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              www.pwaniinnovationweek.co.ke
+              {data.contacts.website}
             </a>
           </p>
         </div>
