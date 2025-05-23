@@ -1,4 +1,4 @@
-# Wall of Developers
+# Pwani Innovation Week
 
 ![Pwani Innovation Week Banner](./src/assets/innovative.png)
 Wall of Developers is a web application that showcases the vibrant developer community at SwahiliPot Hub Foundation (SPHF) in Mombasa, Kenya. The platform highlights hackathons, innovation events, and the talented individuals who have contributed to the local tech ecosystem.
@@ -56,4 +56,16 @@ This project is for educational and community purposes.
 
 ---
 
-For more information, visit [SwahiliPot Hub Foundation](https://wall-of-developers-git-group2-munubis-projects.vercel.app/).
+For more information, visit [SwahiliPot Hub Foundation](https://wall-of-developers-git-group2-munubis-projects.vercel.app/) or [Pwani Innovation Week](https://wall-of-developers-git-group2-munubis-projects.vercel.app/).
+
+# Contibutors of the project include
+ - Munubi Emmanuel   : https://github.com/sspirial
+ - Mwamuye Joseph    : https://github.com/JMakoti
+ - Michael Odhiambo  : https://github.com/mikesplore
+ - Zipporah Mutanu   : https://github.com/zipporahmutanu04
+ - Sarah Nyambura    : https://github.com/Nyambura20
+ - Hannah Nyambura   : https://github.com/annnab-2222
+ - Rebecca Gitau     : https://github.com/Rebecca-254
+ - Shannel Nyawera   : https://github.com/shanny12379
+ - Alfred Mwangi     : https://github.com/kimura-coder
+ 

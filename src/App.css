@@ -115,15 +115,6 @@
   width: 100%;
 }
 
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: white;
-}
-
 .hero {
   width: 100%;
   height: auto;
@@ -149,7 +140,7 @@
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  text-align: center;
+  text-align: left;
   color: #ff6b00;
   font-family: "Stencil Std", "Black Ops One", sans-serif;
 }
@@ -231,11 +222,15 @@
   pointer-events: none;
 }
 .infoPanel {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 20px;
   padding: 2rem;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   color: white;
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: 2rem auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -250,8 +245,42 @@
 
 .info {
   font-family: "Roboto", sans-serif;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
   font-size: 1.2rem;
+}
+
+/* evente info card*/
+.event-info-card {
+  display: flex;
+  width: 300px;
+  gap: 2rem;
+  background:#dd8d53;
+  color: #222;
+  height: 250px;
+  border-radius: 12px;
+  padding: 1.2rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.event-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.event-label {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.event-value {
+  font-size: 1.4rem;
+  color: #222;
 }
 
 .highlights {
@@ -427,131 +456,4 @@
   text-align: center;
   color: #e0e0e0;
   grid-column: 1 / -1;
-}
-
-/* Add responsive styles for Hackathon component */
-@media (max-width: 920px) {
-  .hackathon-image-row {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hackathon-image-wrapper {
-    max-width: 45%;
-    margin-bottom: 10px;
-    min-width: 150px; /* Set a suitable minimum width */
-  }
-
-  .hackathon-title {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .hackathon-text-container {
-    padding: 15px;
-  }
-
-  .hackathon-subtitle {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .hackathon-text p {
-    font-size: 1rem;
-  }
-
-  .hackathon-image {
-    min-height: 150px; /* Set a suitable minimum height */
-  }
-}
-
-/* Add responsive styles for Navbar */
-@media (max-width: 920px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navbarLogo img {
-    height: 40px; /* Adjust logo size for small screens */
-  }
-
-  .navbarLinks {
-    display: none; /* Hide links by default */
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1rem;
-    z-index: 1000;
-  }
-
-  .navbarLinks.open {
-    display: flex; /* Show links when hamburger is clicked */
-  }
-
-  .hamburger {
-    display: block; /* Ensure hamburger is visible */
-    position: absolute;
-    right: 1rem;
-  }
-
-  .navbarLinks {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .navButton {
-    font-size: 0.9rem; /* Adjust font size for small screens */
-    padding: 0.5rem 1rem;
-  }
-}
-
-/* Ensure no style conflicts for hamburger menu and navbar links */
-.navbarLinks {
-  display: none; /* Hide links by default */
-  flex-direction: column;
-  gap: 10px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 1rem;
-  z-index: 1000;
-}
-
-.navbarLinks.open {
-  display: flex; /* Show links when hamburger is clicked */
-}
-
-.hamburger {
-  display: block; /* Ensure hamburger is visible */
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  right: 1rem;
-}
-
-@media (min-width: 920px) {
-  .hamburger {
-    display: none; /* Hide hamburger on larger screens */
-  }
-
-  .navbarLinks {
-    display: flex; /* Show links by default on larger screens */
-    position: static;
-    flex-direction: row;
-    gap: 1.5rem;
-    background-color: transparent;
-    padding: 0;
-  }
 }

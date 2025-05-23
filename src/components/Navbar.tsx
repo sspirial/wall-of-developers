@@ -1,13 +1,6 @@
-import { useState } from "react";
 import "../App.css";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -20,7 +13,6 @@ export default function Navbar() {
         top: offsetPosition,
         behavior: "smooth",
       });
-      setMenuOpen(false); // Close menu after navigation
     }
   };
 
@@ -30,21 +22,11 @@ export default function Navbar() {
         <div className="navbarLogo">
           <img src="/assets/sph-logo.png" alt="Logo" />
         </div>
-        <button className="hamburger" onClick={toggleMenu}>
-          ☰
-        </button>
-        <div className={`navbarLinks ${menuOpen ? "open" : ""}`}>
+        <div className="navbarLinks">
           <button
-            onClick={() => scrollToSection("panel")}
             className="navButton"
           >
             Home
-          </button>
-          <button
-            onClick={() => scrollToSection("hackathon")}
-            className="navButton"
-          >
-            Hackathon
           </button>
           <button
             onClick={() => scrollToSection("panel")}
@@ -52,6 +34,13 @@ export default function Navbar() {
           >
             Panel
           </button>
+          <button
+            onClick={() => scrollToSection("hackathon")}
+            className="navButton"
+          >
+            Hackathon
+          </button>
+
           <button
             onClick={() => scrollToSection("pitches")}
             className="navButton"
