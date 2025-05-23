@@ -47,18 +47,7 @@ Wall of Developers is a web application that showcases the vibrant developer com
 - `index.html` – Main HTML entry point
 
 ## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## License
-
-This project is for educational and community purposes.
-
----
-
-For more information, visit [SwahiliPot Hub Foundation](https://wall-of-developers-git-group2-munubis-projects.vercel.app/) or [Pwani Innovation Week](https://wall-of-developers-git-group2-munubis-projects.vercel.app/).
-
-# Contibutors of the project include
+Contibutors of the project include
  - Munubi Emmanuel   : https://github.com/sspirial
  - Mwamuye Joseph    : https://github.com/JMakoti
  - Michael Odhiambo  : https://github.com/mikesplore
@@ -69,3 +58,11 @@ For more information, visit [SwahiliPot Hub Foundation](https://wall-of-develope
  - Shannel Nyawera   : https://github.com/shanny12379
  - Alfred Mwangi     : https://github.com/kimura-coder
  
+
+## License
+
+This project is for educational and community purposes.
+
+---
+
+For more information, visit [SwahiliPot Hub Foundation](https://wall-of-developers-git-group2-munubis-projects.vercel.app/) or [Pwani Innovation Week](https://wall-of-developers-git-group2-munubis-projects.vercel.app/).
